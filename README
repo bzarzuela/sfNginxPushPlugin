@@ -1,0 +1,22 @@
+sfNginxPushPlugin
+-----------------
+
+This plugin allows for easy pushing of messages to a configured nginx server running the 
+HTTP Push Module.
+
+Developed specifically for the Teleserv JSON Notification format, it's easy to modify for
+your specific use case.
+
+Usage
+-----
+
+Pretty simple:
+
+$foo = sfNginxPush::getInstance();
+$foo->push('channel', 'subject', 'data');
+
+The endpoint will receive a JSON packet with 3 main keys:
+1. Subject
+2. time()
+3. Data - anything json_encode can serialize
+
