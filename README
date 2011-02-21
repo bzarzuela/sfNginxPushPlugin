@@ -7,6 +7,11 @@ HTTP Push Module.
 Developed specifically for the Teleserv JSON Notification format, it's easy to modify for
 your specific use case.
 
+Configuration
+------------
+
+In your app.yml, define nginxpush_endpoint to the full URL of the push module.
+
 Usage
 -----
 
